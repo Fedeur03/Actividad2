@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="../index.html" id="home">
+                    <li>HOME</li>
+                </a>
+                <a href="./contacto.html" id="contacto">
+                    <li>CONTACTO</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-contacto">
+        <section id="section-form">
+            <form action="./contacto.html" method="post" class="formulario">
+                <label for="nombre" class="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required />
+                <label for="email" class="email">E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="Ingrese su correo" required />
+                <label for="telefono" class="telefono">Tel: </label>
+                <input type="tel" pattern="[0-9]*" name="telefono" id="telefono" placeholder="Ingrese su teléfono" required />
+                <label for="mensaje" class="mensaje">Mensaje: </label>
+                <textarea name="mensaje" id="mensaje" placeholder="Ingrese su mensaje" required></textarea>
+
+                <input type="submit" name="enviar" id="enviar" value="Enviar" />
+                <input type="reset" name="cancelar" id="cancelar" value="Cancelar" />
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>TODOS LOS DERECHOS RESERVADOS</p>
+    </footer>
+</body>
+
+</html>
